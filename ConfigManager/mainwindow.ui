@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>934</width>
+    <height>621</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>配置管理</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QTableView" name="tableView"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>934</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="action_new"/>
+    <addaction name="action_open"/>
+    <addaction name="action_save"/>
+    <addaction name="action_close"/>
+    <addaction name="action_recent"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="action_open">
+   <property name="text">
+    <string>打开</string>
+   </property>
+  </action>
+  <action name="action_save">
+   <property name="text">
+    <string>保存</string>
+   </property>
+  </action>
+  <action name="action_close">
+   <property name="text">
+    <string>关闭</string>
+   </property>
+  </action>
+  <action name="action_recent">
+   <property name="text">
+    <string>最近打开</string>
+   </property>
+  </action>
+  <action name="action_new">
+   <property name="text">
+    <string>新建</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

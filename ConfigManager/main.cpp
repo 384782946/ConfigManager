@@ -1,0 +1,17 @@
+#include "mainwindow.h"
+#include <QApplication>
+
+int main(int argc, char *argv[])
+{
+    QApplication a(argc, argv);
+
+    a.setApplicationName("ConfigManager");
+    a.setApplicationVersion("1.0");
+    a.setOrganizationName("xiaojian");
+    a.setOrganizationDomain("xiaojian.site");
+
+    MainWindow w;
+    w.show();
+
+    return a.exec();
+}
